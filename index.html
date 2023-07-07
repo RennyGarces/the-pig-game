@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="preconnect"
+      type="text/css"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>The Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <h1 class="principal--tittle">The Pig Game 🐷</h1>
+        <div class="buttons">
+          <button class="btn btn--new">🔁 Reload the game</button>
+          <button class="btn btn--roll">🎲 Roll the dice</button>
+          <button class="btn btn--hold">💰 Holding score</button>
+        </div>
+        <div class="show--dice">
+          <img
+            class="roll-dice hidden--dice"
+            src="img/dice-3.png"
+            alt="dice numbers"
+          />
+        </div>
+      </header>
+      <div class="container">
+        <section class="playerZero player--playing">
+          <div>
+            <h1 class="title title--0">Player 1️⃣</h1>
+            <h2>Score:</h2>
+            <p class="current--score score--0">0</p>
+          </div>
+          <div>
+            <h1>Current:</h1>
+            <p class="current--depositing depositing--player0">0</p>
+          </div>
+        </section>
+        <section class="playerOne">
+          <div>
+            <h1 class="title title--1">Player 2️⃣</h1>
+            <h2>Score:</h2>
+            <p class="current--score score--1">0</p>
+          </div>
+          <div>
+            <h1>Current:</h1>
+            <p class="current--depositing depositing--player1">0</p>
+          </div>
+        </section>
+        <section class="rules">
+          <ul class="list-rules">
+            <li class="tittle-list">📚 The Rules:</li>
+            <li>Can be played with two players.</li>
+            <li>A player rolls the die repeatedly.</li>
+            <li>The goal is to accumulate as many points as possible</li>
+            <li>Adding up the numbers rolled on each die.</li>
+            <li>If a player rolls a 1, all points accumulated are lost</li>
+            <li>The first player to reach 50 points wins.</li>
+          </ul>
+        </section>
+      </div>
+      <div class="winner">
+        <p class="winner-message">Congratulation</p>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
